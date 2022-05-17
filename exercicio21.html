@@ -1,0 +1,29 @@
+<script>
+    let salario = parseFloat(prompt("Digite o salário para saber o desconto INSS: "));
+
+    function calculoInss(salario) {
+        let desconto;
+
+        if (salario <= 1212.00) {
+            desconto = salario * 0.075;
+        } else if (salario <= 2427.35) {
+            desconto = (salario - 1212.01) * 0.09 + 90.9;
+        } else if (salario <= 3641.03) {
+            desconto = (salario - 2427.36) * 0.12 + 200.28;
+        } else {
+            desconto = (salario - 3641.04) * 0.14 + 345.92;
+        }
+        return desconto;
+    }
+     escrevaSalario(salario);
+
+    function escrevaSalario(salario) {
+        let salarioDesconto = salario - calculoInss(salario);
+
+        if (typeof salarioDesconto == "number") {
+            document.write(`O valor com desconto é de R$ ${salarioDesconto.toFixed(2)}`);
+        } else {
+            document.write("Dados inválidos");
+        }
+    }
+</script>

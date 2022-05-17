@@ -1,0 +1,9 @@
+<script>
+    let fabrica = parseFloat(prompt("Digite o preço de fábrica:"));
+
+    let distribuidor = fabrica * 0.28;
+    let imposto = fabrica * 0.45;
+    let resumo = fabrica + distribuidor + imposto;
+
+    document.write(`Custo para o consumidor é de R$ ${resumo}`);
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let moedas1 = parseFloat(prompt("Digite a quantidade de moedas de 1 centavo: "));
+    let moedas5 = parseFloat(prompt("Digite a quantidade de moedas de 5 centavos: "));
+    let moedas10 = parseFloat(prompt("Digite a quantidade de moedas de 10 centavos: "));
+    let moedas25 = parseFloat(prompt("Digite a quantidade de moedas de 25 centavos: "));
+    let moedas50 = parseFloat(prompt("Digite a quantidade de moedas de 50 centavos: "));
+    let moedas1Real = parseFloat(prompt("Digite a quantidade de moedas de 1 Real: "));
+
+    let calculo = moedas1 * 0.01+
+    moedas5 * 0.05 +
+    moedas10 * 0.10 +
+    moedas25 * 0.25 +
+    moedas50 * 0.50 +
+    moedas1Real * 1.0;
+
+    document.write(`O valor em Reais é de R$ ${calculo}`);
+
+
+</script>

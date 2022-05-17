@@ -1,0 +1,12 @@
+<script> 
+let palavra = prompt("Digite uma palavra para saber se é palíndromo: ");
+
+let palavraPalindromo = palavra.toLowerCase().split("").reverse().join("");
+
+if (palavra == palavraPalindromo) {
+    document.write("É Palíndromo");
+}else {
+    document.write("Não é palíndromo");
+};
+
+</script>
